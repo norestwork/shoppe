@@ -38,3 +38,11 @@
   align-items: center;
   gap: 40px;
 }
+
+.header--main {
+  margin-top: 49px;
+  
+  & .header__inner {
+    border-bottom: 0;
+  }
+}

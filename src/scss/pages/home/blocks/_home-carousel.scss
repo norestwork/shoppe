@@ -1,0 +1,61 @@
+.home-carousel {
+}
+
+.home-carousel__inner {
+  position: relative;
+}
+
+.home-carousel__slide {
+  color: #fff;
+
+  &-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+  }
+
+  &-title {
+    font-size: 33px;
+    font-weight: 500;
+
+    margin-bottom: 16px;
+  }
+
+  &-price {
+    font-size: 26px;
+
+    margin-bottom: 48px;
+  }
+
+  &-btn {
+    padding: 14px 32px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
+
+  img {
+    border-radius: 16px;
+  }
+}
+
+.owl-dots {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.owl-dot span {
+  background: #fff !important;
+}
+
+.owl-dot.active span {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  width: 15px !important;
+  height: 15px !important;
+}
