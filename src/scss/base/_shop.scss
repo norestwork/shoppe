@@ -1,0 +1,38 @@
+.shop__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+.shop__title {
+  font-size: 33px;
+  font-weight: 500;
+}
+.shop__link {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(161, 138, 104);
+}
+.shop__catalog {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  row-gap: 85px;
+  column-gap: 50px;
+}
+.shop__product {
+  font-size: 20px;
+
+  img {
+    margin-bottom: 25px;
+    border-radius: 8px;
+  }
+
+  &-title {
+    margin-bottom: 15px;
+  }
+
+  &-price {
+    color: rgb(161, 138, 104);
+  }
+}
