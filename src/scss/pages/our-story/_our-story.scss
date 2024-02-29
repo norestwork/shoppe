@@ -1,0 +1,48 @@
+.about__inner {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-size: 33px;
+  font-weight: 500;
+
+  margin-bottom: 25px;
+  text-align: center;
+}
+.about__subtitle {
+  font-size: 20px;
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.about__paragraph--subtitle {
+  margin-bottom: 40px;
+}
+
+.about__paragraph {
+  max-width: 670px;
+}
+.about__section {
+  margin-bottom: 40px;
+
+  &-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  &-img {
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+}
+
+.about__list {
+  margin-top: 15px;
+}
+
+.about__list-item {
+  list-style: disc;
+  list-style-position: inside;
+}
