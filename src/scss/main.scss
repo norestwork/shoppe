@@ -4,9 +4,10 @@
 
 // BLOCKS
 @import "./pages/blocks/header";
-@import "./base/shop";
-@import "./base/footer";
+@import "./pages/blocks/shop";
+@import "./pages/blocks/footer";
 
 // PAGES
 @import "./pages/home/home";
-@import "./pages/our-story/our-story"
+@import "./pages/our-story/our-story";
+@import "./pages/error/error";

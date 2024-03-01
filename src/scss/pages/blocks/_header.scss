@@ -1,3 +1,7 @@
+.header {
+  margin-top: 65px;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -49,7 +53,32 @@
 
 .header--about {
   margin-bottom: 95px;
-  margin-top: 65px;
+}
+
+.header--error {
+  margin-bottom: 250px;
+}
+
+.header__nav-pages li {
+  position: relative;
+  
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    bottom: -17px;
+    opacity: .2;
+
+    transition: .3s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
 }
 
 .header__nav-page--active {

@@ -1,0 +1,28 @@
+.error {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.error__inner {
+  text-align: center;
+}
+.error__title {
+  font-size: 33px;
+  font-weight: 500;
+
+  margin-bottom: 25px;
+}
+.error__subtitle {
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+
+  margin-bottom: 65px;
+}
+.error__btn {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}

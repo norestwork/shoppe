@@ -23,9 +23,13 @@
 .shop__product {
   font-size: 20px;
 
-  img {
+  &-img {
     margin-bottom: 25px;
-    border-radius: 8px;
+    position: relative;
+
+    img {
+      border-radius: 8px;
+    }
   }
 
   &-title {
@@ -34,5 +38,29 @@
 
   &-price {
     color: rgb(161, 138, 104);
+  }
+}
+
+.shop__product:hover .shop__btn {
+  opacity: 1;
+}
+
+.shop__btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 22px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 0;
+  
+  transition: .3s;
+
+  &:hover {
+    background-color: darken(rgba(255, 255, 255, 0.5), 15%);
   }
 }

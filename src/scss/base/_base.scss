@@ -9,8 +9,10 @@ body {
 }
 
 .wrapper {
+  position: relative;
   min-height: 100vh;
   overflow: hidden;
+  padding-bottom: 250px;
 }
 
 .container {
@@ -18,4 +20,8 @@ body {
   max-width: 1280px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.main {
+  margin-bottom: 250px;
 }
