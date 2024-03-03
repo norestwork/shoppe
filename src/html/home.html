@@ -33,11 +33,23 @@
             </ul>
             <div class="header__nav-border"></div>
             <ul class="header__nav-icons">
-              <li><a href="#"><img src="./img/icons/search-icon.svg" alt="Search"></a></li>
-              <li><a href="#"><img src="./img/icons/shopping-bag-icon.svg" alt="Search"></a></li>
-              <li><a href="#"><img src="./img/icons/user-icon.svg" alt="Search"></a></li>
+              <li class="header__nav-icon-search"><button><img src="./img/icons/search-icon.svg" alt="Search"></button></li>
+              <li><a href="#"><img src="./img/icons/shopping-bag-icon.svg" alt="Shopping Bag"></a></li>
+              <li><a href="#"><img src="./img/icons/user-icon.svg" alt="User Icon"></a></li>
             </ul>
           </nav>
+          <nav class="header__nav-mobile">
+            <ul class="header__nav-mobile-list">
+              <li><a href="#"><img src="./../img/icons/shopping-bag-icon.svg" alt="Shopping Bag"></a></li>
+              <li><a href="#"><img src="./../img/icons/burger-icon.svg" alt="Burger"></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__bottom">
+          <form class="header__bottom-form">
+            <input type="text" placeholder="Search" class="header__bottom-search">
+            <img src="./../img/icons/search-icon-light.svg" alt="Search Icon Light">
+          </form>
         </div>
       </div>
     </header>
@@ -232,6 +244,7 @@
           crossorigin="anonymous" 
           referrerpolicy="no-referrer">
   </script>
+  <script src="./../js/header.js"></script>
   <script src="./../js/carousel.js"></script>
 </body>
 </html>
