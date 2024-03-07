@@ -10,19 +10,40 @@
   <div class="wrapper">
     <header class="header header--error">
       <div class="container">
-        <div class="header__inner">
+        <div class="header__top">
           <div class="logo"><a href="home.html">Shoppe</a></div>
           <nav class="header__nav">
             <ul class="header__nav-pages">
               <li><a href="#">Shop</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="story.html">Our Story</a></li>
+              <li><a href="./story.html">Our Story</a></li>
             </ul>
             <div class="header__nav-border"></div>
             <ul class="header__nav-icons">
-              <li><a href="#"><img src="./img/icons/search-icon.svg" alt="Search"></a></li>
-              <li><a href="#"><img src="./img/icons/shopping-bag-icon.svg" alt="Search"></a></li>
-              <li><a href="#"><img src="./img/icons/user-icon.svg" alt="Search"></a></li>
+              <li class="header__nav-icon-search"><button><img src="./img/icons/search-icon.svg" alt="Search"></button></li>
+              <li class="header__nav-icon-shopping-bag"><a href="#"><img src="./img/icons/shopping-bag-icon.svg" alt="Shopping Bag"></a></li>
+              <li class="header__nav-icon-user"><a href="#"><img src="./img/icons/user-icon.svg" alt="User Icon"></a></li>
+              <li class="header__nav-icon-burger burger"><button><img src="./../img/icons/burger-icon.svg" alt="Burger Icon"></button></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__bottom">
+          <form class="header__bottom-form">
+            <input type="text" placeholder="Search" class="header__bottom-search">
+            <img src="./../img/icons/search-icon-light.svg" alt="Search Icon Light">
+          </form>
+          <nav class="header__nav-bottom">
+            <ul class="header__nav-list-bottom">
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="./story.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="header__nav-account">
+              <li class="header__nav-account-myaccount"><a href="#">My account</a></li>
+              <li class="header__nav-account-logout"><button>Logout</button></li>
             </ul>
           </nav>
         </div>
@@ -104,5 +125,11 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+          crossorigin="anonymous">
+  </script>
+  <script src="./../js/header.js"></script>
 </body>
 </html>

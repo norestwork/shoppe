@@ -2,7 +2,7 @@
   margin-top: 65px;
 }
 
-.header__inner {
+.header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +14,8 @@
   font-family: "Allerta", sans-serif;
   text-transform: uppercase;
   font-size: 35px;
+
+  margin-right: 50px;
 
   &::first-letter {
     color: #A18A68;
@@ -29,6 +31,10 @@
   display: flex;
   align-items: center;
   gap: 65px;
+
+  li {
+    white-space: nowrap;
+  }
 }
 
 .header__nav-border {
@@ -43,6 +49,10 @@
   gap: 40px;
 }
 
+.header__nav-icon-burger {
+  display: none;
+}
+
 .header__nav-mobile {
   display: none;
 }
@@ -50,7 +60,7 @@
 .header--main {
   margin-top: 49px;
   
-  & .header__inner {
+  & .header__top {
     border-bottom: 0;
   }
 }
@@ -107,15 +117,16 @@
   display: none;
   position: relative;
 
+  width: 100%;
+  max-width: 515px;
+  margin-left: auto;
+
   img {
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
   }
-}
-.header__bottom-form--active {
-  display: block !important;
 }
 
 .header__bottom-search {
@@ -128,4 +139,78 @@
   position: relative;
 
   width: 100%;
+}
+
+.header__nav-bottom {
+  display: none;
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  overflow-y: auto;
+
+  font-size: 20px;
+}
+
+.header__nav-list-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  margin-bottom: 25px;
+}
+.header__nav-account {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header__nav-account-myaccount {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./../../../img/icons/user-icon.svg);
+    margin-right: 10px;
+  }
+}
+.header__nav-account-logout {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./../../../img/icons/logout-icon.svg);
+    margin-right: 10px;
+  }
+}
+
+// Adaptive
+@media (max-width: 730px) {
+  .header__top {
+    border: unset;
+  }
+
+  .header__nav-pages, .header__nav-border, .header__nav-icon-search, .header__nav-icon-user {
+    display: none;
+  }
+
+  .header__nav-icon-burger {
+    display: block;
+  }
+
+  .header__bottom-form {
+    display: block;
+    max-width: unset;
+  }
 }
