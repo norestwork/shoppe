@@ -3,8 +3,8 @@ $('.header__nav-icon-search').on('click', () => {
 })
 
 $('.header__nav-icon-burger').on('click', () => {
-  $('body,html').animate({scrollTop: 0}, 50);
-  $('.header__nav-bottom').slideToggle(100);
+  $('body,html').animate({scrollTop: 0}, 100);
+  $('.header__nav-bottom').slideToggle(200);
   $('body').toggleClass('body--hidden');
   $('.header__nav-icon-burger').toggleClass('cross');
 
@@ -12,7 +12,7 @@ $('.header__nav-icon-burger').on('click', () => {
 })
 
 $('.header__nav-bottom').on('click', () => {
-  $('.header__nav-bottom').slideToggle(100);
+  $('.header__nav-bottom').slideToggle(200);
   $('body').toggleClass('body--hidden');
   $('.header__nav-icon-burger').toggleClass('cross');
 
