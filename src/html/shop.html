@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" 
+        integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+  >
   <link rel="stylesheet" href="./css/main.css">
   <title>Shoppe | Shop</title>
 </head>
@@ -29,7 +35,7 @@
         </div>
         <div class="header__bottom">
           <form class="header__bottom-form">
-            <input type="search" placeholder="Search" class="header__bottom-search">
+            <input type="search" placeholder="Search..." class="header__bottom-search">
             <img src="./../img/icons/search-icon-light.svg" alt="Search Icon Light">
           </form>
           <nav class="header__nav-bottom">
@@ -59,7 +65,37 @@
             </header>
             <div class="shop__body">
               <aside class="shop__filter">
-                
+                <form class="shop__filter-search">
+                  <input type="search" placeholder="Search...">
+                </form>
+                <div class="shop__selects">
+                  <select class="shop__select">
+                    <option>Shop By</option>
+                  </select>
+                  <select class="shop__select">
+                    <option>Sort By</option>
+                  </select>
+                </div>
+                <div class="shop__range-block">
+                  <div class="shop__range"></div>
+                  <div class="shop__subrange">Price: $10 - $180</div>
+                </div>
+                <div class="shop__switches">
+                  <div class="shop__switch-block">
+                    <p class="shop__switch-text">On sale</p>
+                    <label class="shop__switch">
+                      <input type="checkbox">
+                      <span class="shop__switch-round"></span>
+                    </label>
+                  </div>
+                  <div class="shop__switch-block">
+                    <p class="shop__switch-text">In stock</p>
+                    <label class="shop__switch">
+                      <input type="checkbox">
+                      <span class="shop__switch-round"></span>
+                    </label>
+                  </div>
+                </div>
               </aside>
               <ul class="shop__catalog">
                 <li class="shop__product"><a href="#">
@@ -184,6 +220,12 @@
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
           crossorigin="anonymous">
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" 
+          integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+  </script>
   <script src="./../js/header.js"></script>
+  <script src="./../js/filter.js"></script>
 </body>
 </html>

@@ -202,6 +202,10 @@
 
 // Adaptive
 @media (max-width: 730px) {
+  .header {
+    margin-top: 15px;
+  }
+
   .header__top {
     border: unset;
   }
@@ -217,5 +221,11 @@
   .header__bottom-form {
     display: block;
     max-width: unset;
+  }
+}
+
+@media(max-width: 450px) {
+  .header--shop {
+    margin-bottom: 30px;
   }
 }
