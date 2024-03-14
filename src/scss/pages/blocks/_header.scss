@@ -1,5 +1,6 @@
 .header {
   margin-top: 65px;
+  margin-bottom: 95px;
 }
 
 .header__top {
@@ -65,16 +66,12 @@
   }
 }
 
-.header--about {
-  margin-bottom: 95px;
-}
-
 .header--error {
   margin-bottom: 250px;
 }
 
-.header--shop {
-  margin-bottom: 95px;
+.header--privacy {
+  margin-bottom: 40px;
 }
 
 .header__nav-pages li {
@@ -225,11 +222,7 @@
 }
 
 @media(max-width: 450px) {
-  .header--shop {
-    margin-bottom: 30px;
-  }
-
-  .header--about {
+  .header {
     margin-bottom: 40px;
   }
 }
