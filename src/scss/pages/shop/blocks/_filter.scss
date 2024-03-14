@@ -2,6 +2,19 @@
   width: 260px;
   margin-right: 40px;
 }
+
+.shop__filter-title {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  p {
+    font-size: 12px;
+    color: rgb(161, 138, 104);
+  }
+}
+
 .shop__filter-search {
   border-bottom: 1px solid rgb(216, 216, 216);
   margin-bottom: 40px;
@@ -131,4 +144,21 @@
 
 .shop__switch input:checked + .shop__switch-round:before {
   transform: translateY(50%) translateX(14px);
+}
+
+@media(max-width: 1000px) {
+  .shop__filter {
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    width: 100%;
+
+    &-inner {
+      display: none;
+    }
+  }
+
+  .shop__filter-title {
+    display: flex;
+  }
 }
