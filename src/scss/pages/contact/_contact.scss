@@ -1,0 +1,39 @@
+.contact__subtitle {
+  max-width: 560px;
+  margin-bottom: 105px;
+}
+
+.contact__forms {
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.contact__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 115px;
+  row-gap: 95px;
+
+  margin-bottom: 125px;
+}
+
+.contact__textarea {
+  margin-bottom: 95px;
+}
+
+@media (max-width: 500px) {
+  .contact__inputs {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 45px;
+    margin-bottom: 80px;
+  }
+  
+  .contact__title {
+    font-size: 25px;
+  }
+
+  .contact__subtitle {
+    font-size: 16px;
+  }
+}

@@ -60,6 +60,7 @@
 
 .header--main {
   margin-top: 49px;
+  margin-bottom: 15px;
   
   & .header__top {
     border-bottom: 0;
@@ -72,6 +73,10 @@
 
 .header--privacy {
   margin-bottom: 40px;
+}
+
+.header--contact {
+  margin-bottom: 125px;
 }
 
 .header__nav-pages li {

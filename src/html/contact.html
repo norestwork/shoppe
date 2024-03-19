@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Shoppe | Privacy Police</title>
+  <title>Shoppe | Contact</title>
 </head>
 <body>
   <div class="wrapper">
-    <header class="header header--privacy">
+    <header class="header header--contact">
       <div class="container">
         <div class="header__top">
           <div class="logo"><a href="home.html">Shoppe</a></div>
@@ -49,33 +49,28 @@
         </div>
       </div>
     </header>
-
+  
     <main class="main">
-      <article class="privacy">
+      <section class="contact">
         <div class="container">
-          <div class="privacy__inner">
-            <h2 class="privacy__title">Privacy Policy</h2>
-            <section class="privacy__paragraph">
-              <p>
-                Duis rutrum dictum libero quis rutrum. Etiam sed neque aliquam, sollicitudin ante a, gravida arcu. Nam fringilla molestie velit, eget pellentesque risus scelerisque a. Nam ac urna maximus, tempor magna et, placerat urna. Curabitur eu magna enim. Proin placerat tortor lacus, ac sodales lectus placerat quis. 
-              </p>
-            </section>
-            <section class="privacy__paragraph">
-              <h3 class="privacy__paragraph-title">Security</h3>
-              <p>
-                Duis rutrum dictum libero quis rutrum. Etiam sed neque aliquam, sollicitudin ante a, gravida arcu. Nam fringilla molestie velit, eget pellentesque risus scelerisque.
-              </p>
-            </section>
-            <section class="privacy__paragraph">
-              <h3 class="privacy__paragraph-title">Cookies</h3>
-              <ul class="privacy__list">
-                <li>Duis rutrum dictum libero quis rutrum. Etiam sed neque aliquam, sollicitudin.</li>
-                <li>Nam fringilla molestie velit, eget pellentesque risus scelerisque a</li>
-              </ul>
-            </section>
+          <div class="contact__inner">
+            <h2 class="form__title contact__title">Contact Us</h2>
+            <p class="form__subtitle contact__subtitle">Say Hello send us your thoughts about our products or share your ideas with our Team!</p>
+            <form class="contact__forms">
+              <div class="contact__inputs">
+                <input type="text" class="form__input contact__input" placeholder="First name">
+                <input type="text" class="form__input contact__input" placeholder="Last name">
+                <input type="email" class="form__input contact__input" placeholder="Email">
+                <select class="form__input contact__select">
+                  <option>Subject</option>
+                </select>
+              </div>
+              <textarea placeholder="Message" class="form__textarea contact__textarea"></textarea>
+              <button class="form__btn contact btn">Send</button>
+            </form>
           </div>
         </div>
-      </article>
+      </section>
     </main>
 
     <footer class="footer">
@@ -140,6 +135,7 @@
         </div>
       </div>
     </footer>
+
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
