@@ -1,0 +1,78 @@
+.account__inner {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.account__title {
+  margin-bottom: 65px;
+}
+
+.account__tab-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(239, 239, 239);
+  padding: 5px;
+  border-radius: 8px;
+
+  margin-bottom: 125px;
+
+  input {
+    display: none;
+  }
+}
+
+.account__tab-label  {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px 0;
+  border-radius: 8px;
+  transition: .2s;
+  text-align: center;
+}
+
+.account__tab-box input:checked + .account__tab-label {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.account__sign-in, .account__register {
+  display: none;
+}
+
+.account__body--active {
+  display: block;
+}
+
+.account__input {
+  width: 100%;
+
+  & + & {
+    margin-top: 45px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+
+.account__remember {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+
+.account__btn {
+  margin-bottom: 15px;
+}
+
+.account__reset-password {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.account__register > .account__input:last-of-type {
+  margin-bottom: 70px;
+}

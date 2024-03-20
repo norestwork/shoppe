@@ -3,14 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" 
-        integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" 
-  >
   <link rel="stylesheet" href="./css/main.css">
-  <title>Shoppe | Shop</title>
+  <title>Shoppe | Account</title>
 </head>
 <body>
   <div class="wrapper">
@@ -20,7 +14,7 @@
           <div class="logo"><a href="home.html">Shoppe</a></div>
           <nav class="header__nav">
             <ul class="header__nav-pages">
-              <li class="header__nav-page--active"><a href="#">Shop</a></li>
+              <li><a href="./shop.html">Shop</a></li>
               <li><a href="./blog.html">Blog</a></li>
               <li><a href="./story.html">Our Story</a></li>
             </ul>
@@ -57,102 +51,33 @@
     </header>
 
     <main class="main">
-      <section class="shop shop-shop">
+      <section class="account">
         <div class="container">
-          <div class="shop__inner">
-            <header class="shop__header">
-              <h2 class="shop__title">Shop The Latest</h2>
-            </header>
-            <div class="shop__body">
-              <aside class="shop__filter">
-                <button class="shop__filter-title">
-                  <img src="./../img/icons/filter-icon.svg" alt="Filter Icon">
-                  <p>Filter</p>
-                </button>
-                <div class="shop__filter-inner">
-                  <form class="shop__filter-search">
-                    <input type="search" placeholder="Search...">
-                  </form>
-                  <div class="shop__selects">
-                    <select class="shop__select">
-                      <option>Shop By</option>
-                    </select>
-                    <select class="shop__select">
-                      <option>Sort By</option>
-                    </select>
-                  </div>
-                  <div class="shop__range-block">
-                    <div class="shop__range"></div>
-                    <div class="shop__subrange">Price: $10 - $180</div>
-                  </div>
-                  <div class="shop__switches">
-                    <div class="shop__switch-block">
-                      <p class="shop__switch-text">On sale</p>
-                      <label class="shop__switch">
-                        <input type="checkbox">
-                        <span class="shop__switch-round"></span>
-                      </label>
-                    </div>
-                    <div class="shop__switch-block">
-                      <p class="shop__switch-text">In stock</p>
-                      <label class="shop__switch">
-                        <input type="checkbox">
-                        <span class="shop__switch-round"></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-              <ul class="shop__catalog">
-                <li class="shop__product"><a href="#">
-                  <div class="shop__product-img">
-                    <img src="./../img/shop/lira-earrings.png" alt="Lira Earrings">
-                    <button class="shop__btn">Add to cart</button>
-                  </div>
-                  <h3 class="shop__product-title">Lira Earrings</h3>
-                  <p class="shop__product-price">$ 20,00</p>
-                </a></li>
-                <li class="shop__product"><a href="#">
-                  <div class="shop__product-img">
-                    <img src="./../img/shop/hal-earrings.png" alt="Hal Earrings">
-                    <button class="shop__btn">Add to cart</button>
-                  </div>
-                  <h3 class="shop__product-title">Hal Earrings</h3>
-                  <p class="shop__product-price">$ 25,00</p>
-                </a></li>
-                <li class="shop__product"><a href="#">
-                  <div class="shop__product-img">
-                    <img src="./../img/shop/kaede-heir-pain.png" alt="Kaede Hair Pin Set Of 3 ">
-                    <button class="shop__btn">Add to cart</button>
-                  </div>
-                  <h3 class="shop__product-title">Kaede Hair Pin Set Of 3 </h3>
-                  <p class="shop__product-price">$ 30,00</p>
-                </a></li>
-                <li class="shop__product"><a href="#">
-                  <div class="shop__product-img">
-                    <img src="./../img/shop/hair-pin.png" alt="Hair Pin Set of 3">
-                    <button class="shop__btn">Add to cart</button>
-                  </div>   
-                  <h3 class="shop__product-title">Hair Pin Set of 3</h3>
-                  <p class="shop__product-price">$ 30,00</p>
-                </a></li>
-                <li class="shop__product"><a href="#">
-                  <div class="shop__product-img">
-                    <img src="./../img/shop/plaine-necklace.png" alt="Plaine Necklace">
-                    <button class="shop__btn">Add to cart</button>
-                  </div>
-                  <h3 class="shop__product-title">Plaine Necklace</h3>
-                  <p class="shop__product-price">$ 19,00</p>
-                </a></li>
-                <li class="shop__product"><a href="#">
-                  <div class="shop__product-img">
-                    <img src="./../img/shop/yuki-hair-pin.png" alt="Yuki Hair Pin Set of 3">
-                    <button class="shop__btn">Add to cart</button>
-                  </div>
-                  <h3 class="shop__product-title">Yuki Hair Pin Set of 3</h3>
-                  <p class="shop__product-price">$ 29,00</p>
-                </a></li>
-              </ul>
+          <div class="account__inner">
+            <div class="form__title account__title">My Account</div>
+            <div class="account__body">
+              <div class="account__tab-box">
+                <input type="radio" id="account__tab-sign-in" name="account__tab" checked>
+                <label for="account__tab-sign-in" class="account__tab-label">Sign in</label>
+                <input type="radio" id="account__tab-register" name="account__tab">
+                <label for="account__tab-register" class="account__tab-label">Register</label>
+              </div>
+    
+              <form class="account__sign-in">
+                <input type="email" class="form__input account__input" placeholder="Email">
+                <input type="password" class="form__input account__input" placeholder="Password">
+                <label class="account__remember"><input type="checkbox"> Remember me</label>
+                <button class="form__btn account__btn"><a href="#">Sign In</a></button>
+                <a href="./reset-password.html" class="account__reset-password">Have you forgotten your password?</a>
+              </form>
+
+              <form class="account__register">
+                <input type="email" class="form__input account__input" placeholder="Email">
+                <input type="password" class="form__input account__input" placeholder="Password">
+                <input type="password" class="form__input account__input" placeholder="Repeat password">
+                <button class="form__btn account__btn"><a href="#">Register</a></button>
+              </form>
+
             </div>
           </div>
         </div>
@@ -222,16 +147,12 @@
       </div>
     </footer>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
           crossorigin="anonymous">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" 
-          integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer">
-  </script>
   <script src="./../js/header.js"></script>
-  <script src="./../js/filter.js"></script>
+  <script src="./../js/account.js"></script>
 </body>
 </html>

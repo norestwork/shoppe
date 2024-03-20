@@ -29,6 +29,7 @@
 
 .form__btn {
   display: block;
+  padding: 15px 220px;
   width: 100%;
   max-width: 500px;
   padding: 15px 0;
@@ -38,6 +39,7 @@
   font-weight: 700;
   border-radius: 4px;
   text-transform: uppercase;
+  white-space: nowrap;
 
   margin: 0 auto;
 }
