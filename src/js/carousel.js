@@ -5,5 +5,6 @@ $(document).ready(function(){
     touchDrag: true,
     margin: 10,
     dots: true,
+    autoHeight: true,
   });
 });
