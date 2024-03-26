@@ -5,6 +5,7 @@
 
 .home-carousel__inner {
   position: relative;
+  border-radius: 16px;
 }
 
 .home-carousel__slide {
@@ -42,22 +43,25 @@
   }
 }
 
-.owl-dots {
+.splide__pagination {
   display: flex;
   align-items: center;
   position: absolute;
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
+  gap: 10px;
 }
 
-.owl-dot span {
+.splide__pagination__page {
   background: #fff !important;
+  width: 10px;
+  height: 10px;
 }
 
-.owl-dot.active span {
+.splide__pagination__page.is-active {
   background-color: transparent !important;
   border: 1px solid #fff;
-  width: 15px !important;
-  height: 15px !important;
+  width: 12px !important;
+  height: 12px !important;
 }
