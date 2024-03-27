@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../libs/splide-4.1.3/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Shoppe | Product</title>
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header header--product">
       <div class="container">
         <div class="header__top">
           <div class="logo"><a href="home.html">Shoppe</a></div>
@@ -50,7 +51,38 @@
       </div>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <section class="product">
+        <div class="container">
+          <div class="product__inner">
+            <div class="product__top">
+              <div class="product__slider">
+                <ul class="product__thumbnails splide">
+                  <div class="splide__track">
+                    <div class="splide__list">
+                      <li class="product__thumbnails-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                      <li class="product__thumbnails-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                      <li class="product__thumbnails-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                      <li class="product__thumbnails-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                    </div>
+                  </div>
+                </ul>
+                <div class="product__slider-main splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="product__slider-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                      <li class="product__slider-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                      <li class="product__slider-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                      <li class="product__slider-item splide__slide"><img src="./../img/shop/lira-earrings.png" alt="Lira Earrings"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
@@ -115,10 +147,12 @@
       </div>
     </footer>
   </div>
+  <script src="./../libs/splide-4.1.3/dist/js/splide.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
           crossorigin="anonymous">
   </script>
   <script src="./../js/header.js"></script>
+  <script src="./../js/product-slider.js"></script>
 </body>
 </html>
