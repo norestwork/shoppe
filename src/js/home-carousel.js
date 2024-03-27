@@ -19,6 +19,12 @@ const splide = new Splide('.splide', {
   arrows: false,
   pagination: true,
   gap: '10px',
+  breakpoints: {
+    600: {
+      height: '500px',
+      
+    }
+  }
 })
 
 splide.mount();

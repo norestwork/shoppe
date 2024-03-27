@@ -10,6 +10,7 @@
 
 .home-carousel__slide {
   color: #fff;
+  object-fit: cover;
 
   &-content {
     position: absolute;
@@ -40,6 +41,10 @@
 
   img {
     border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60%;
   }
 }
 
@@ -64,4 +69,28 @@
   border: 1px solid #fff;
   width: 12px !important;
   height: 12px !important;
+}
+
+@media (max-width: 450px) {
+  .home-carousel__slide {
+    &-content {
+      top: 70%;
+    }
+
+    &-title {
+      font-size: 25px;
+    }
+
+    &-price {
+      font-size: 20px;
+    }
+
+    &-btn {
+      padding: 7px 16px;
+    }
+  }
+
+  .splide__pagination {
+    gap: 5px;
+  }
 }
