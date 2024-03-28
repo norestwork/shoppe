@@ -7,28 +7,44 @@
 }
 
 .product__slider-item {
+  
   width: 100%;
   height: 100%;
   
   img {
+    border-radius: 8px;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
+
 .product__thumbnails {
   display: flex;
-  flex-direction: column;
+  margin-right: 40px;
   align-self: stretch;
+  flex-direction: column;
   justify-content: space-between;
   width: 120px;
-  margin-right: 40px;
 }
 
 .product__thumbnails-item  {
   img {
+    border-radius: 8px;
     width: 120px;
     height: 120px;
     object-fit: cover;
+  }
+}
+
+.product__slider-progress {
+  margin-top: 20px;
+  height: 2px;
+  background-color: rgb(216, 216, 216);
+
+  &-bar {
+    transition: .3s;
+    height: 2px;
+    background-color: rgb(112, 112, 112);
   }
 }
